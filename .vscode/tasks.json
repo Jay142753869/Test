@@ -2,20 +2,19 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: cl.exe 生成活动文件",
-            "command": "cl.exe",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "D:\\mingw64\\bin\\g++.exe",//把E:\\mingw64换成自己的mingw64存放的路径
             "args": [
-                "/Zi",
-                "/EHsc",
-                "/nologo",
-                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}"
+                "-g",
+                "${file}",
+                "-o",
+                "C:\\Users\\Jay14\\Desktop\\cpp\\exe\\${fileBasenameNoExtension}.exe"//只需要把E:\\C++改成自己代码的工作路径即可
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": [
-                "$msCompile"
+                "$gcc"
             ],
             "group": {
                 "kind": "build",
