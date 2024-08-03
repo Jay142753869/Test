@@ -8,7 +8,7 @@
             "request": "launch",
             "program": "C:\\Users\\Jay14\\Desktop\\cpp\\exe\\${fileBasenameNoExtension}.exe",//只需要把E:\\C++改成自己代码的工作路径即可
             "args": [],
-            "stopAtEntry": false,
+            "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole":  false,
